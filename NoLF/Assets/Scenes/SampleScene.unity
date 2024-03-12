@@ -25716,6 +25716,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpike
       objectReference: {fileID: 0}
+    - target: {fileID: 3188195274491685506, guid: 8c7d7c00b69d78c418495ac2928da78e, type: 3}
+      propertyPath: turretRotationPoint
+      value: 
+      objectReference: {fileID: 6882828017865255453}
     - target: {fileID: 8565046456145316498, guid: 8c7d7c00b69d78c418495ac2928da78e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5
@@ -25761,6 +25765,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c7d7c00b69d78c418495ac2928da78e, type: 3}
+--- !u!4 &6882828017865255453 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5149976243750200716, guid: 8c7d7c00b69d78c418495ac2928da78e, type: 3}
+  m_PrefabInstance: {fileID: 6882828017865255452}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8148045836471139638
 PrefabInstance:
   m_ObjectHideFlags: 0
