@@ -50,3 +50,6 @@ TagManager:
   - name: Turrets/Enemies
     uniqueID: 2054062585
     locked: 0
+  - name: UI
+    uniqueID: 3253710805
+    locked: 0
