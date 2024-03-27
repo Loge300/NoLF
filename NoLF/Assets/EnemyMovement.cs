@@ -28,16 +28,16 @@ public class EnemyMovement : MonoBehaviour
         //moves the enemy toward the center every frame at the enemies speed variable
         transform.position = Vector2.MoveTowards(transform.position, _targetPosition, speed * Time.deltaTime);
                 
-        /* Use this code for testing decreasing helth related code
-         * if(Input.GetKeyDown("d"))
+        // Use this code for testing decreasing helth related code
+          if(Input.GetKeyDown("k"))
         {
-            health = health - 1;
+            health = 0;
             if (health <= 0) 
             {
                 Instantiate(scrap, transform.position, transform.rotation);
                 GameObject.Destroy(gameObject);
             }
-        }*/
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D enemy)

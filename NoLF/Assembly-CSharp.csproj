@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Turret.cs" />
     <Compile Include="Assets\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\UI\CraftingBook.cs" />
   </ItemGroup>
   <ItemGroup>
