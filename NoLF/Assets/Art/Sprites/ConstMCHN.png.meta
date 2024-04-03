@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 22608be7a4771fc44ae5e4f6be09c9b5
+guid: 3a836fc592864e7428f9c7b2fcd025d6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,7 +110,70 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpikpistolScaled_0
+      name: ConstMCHN_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7347612128a2644296130547e3c7862
+      internalID: 1966629304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConstMCHN_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3fef2ad027b3e4da2b34dba3dcda25
+      internalID: -1668067779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConstMCHN_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601ab266b8cf50d468f6afa1999a3b5c
+      internalID: 1120689986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConstMCHN_3
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +187,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49a72ec3f34dba5489da4623ce417afd
-      internalID: -2077027241
+      spriteID: c468efc910637374e96178b9a7c16f42
+      internalID: 340673793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpikpistolScaled_1
+      name: ConstMCHN_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5abaf882d537fb4f8ef2ddcb43dcdf1
+      internalID: -1670684344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConstMCHN_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93890f0a3b278374f8f2079682b37284
+      internalID: -189078347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConstMCHN_6
       rect:
         serializedVersion: 2
         x: 0
@@ -145,8 +250,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69772feca5b808f47a5e4c1f7a8d7eaa
-      internalID: 626450960
+      spriteID: 9f0cf5c92bda573469cd801141a1a63c
+      internalID: -571811827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConstMCHN_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff7c9556c6ff7845a674561319f835f
+      internalID: 140198185
       vertices: []
       indices: 
       edges: []
@@ -162,8 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SpikpistolScaled_0: -2077027241
-      SpikpistolScaled_1: 626450960
+      ConstMCHN_0: 1966629304
+      ConstMCHN_1: -1668067779
+      ConstMCHN_2: 1120689986
+      ConstMCHN_3: 340673793
+      ConstMCHN_4: -1670684344
+      ConstMCHN_5: -189078347
+      ConstMCHN_6: -571811827
+      ConstMCHN_7: 140198185
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
