@@ -21,7 +21,7 @@ public class CentralTowerControl : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("Collision Detected with Tower");
+        //Debug.Log("Collision Detected with Tower");
         if (other.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Damage Dealt to Tower");

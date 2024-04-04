@@ -22,18 +22,18 @@ public class CraftingBook : MonoBehaviour
     void Start()
     {
         transform.position = new Vector3(325, offScreenPos, 0);
-        slide(onScreenPos, 1);
+        //slide(onScreenPos, 1);
     }
 
     void Update() {
         if (direction == 1) {
             if (transform.position.y < targetPos) {
-                speed *= 1.02f;
+                speed *= 1.1f;
                 transform.position += new Vector3(0, speed, 0);
             }
         } else {
             if (transform.position.y > targetPos) {
-                speed *= 1.02f;
+                speed *= 1.1f;
                 transform.position -= new Vector3(0, speed, 0);
             }
         }
@@ -50,5 +50,13 @@ public class CraftingBook : MonoBehaviour
         speed = 0.05f;
         direction = directionParam;
         targetPos = targetPosParam;
+    }
+
+    public void slideIn() {
+        slide(onScreenPos, 1);
+    }
+
+    public void slideOut() {
+        slide(offScreenPos, -1);
     }
 }

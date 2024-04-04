@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5305054567412573398}
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   _targetPosition: {x: 0, y: 0}
-  health: 3
+  health: 1
   scrap: {fileID: 4925162864503927945, guid: 9d897e763017ab84cb9fe5d85bb52a95, type: 3}
 --- !u!61 &3829170334417210860
 BoxCollider2D:

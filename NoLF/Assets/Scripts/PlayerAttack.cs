@@ -26,6 +26,6 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Attack()
     {
-        hits = Physics2D.CircleCastAll(attackTransform.position, attackRange, transform.right, 0f, attackableLayer);
+        //hits = Physics2D.CircleCastAll(attackTransform.position, attackRange, transform.right, 0f, attackableLayer);
     }
 }

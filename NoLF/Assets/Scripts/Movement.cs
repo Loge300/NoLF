@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour
 {
     public float speed = 5f; // Adjust the speed as needed
     private Rigidbody2D rb;
+    [SerializeField] private CraftingBook book;
 
     void Start()
     {
@@ -26,5 +27,21 @@ public class Movement : MonoBehaviour
 
         // Move the character
         rb.velocity = new Vector2(movement.x * speed, movement.y * speed);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        //Debug.Log("PLAYER COLLISION ENTER");
+        if (other.gameObject.CompareTag("CentralTower")) {
+            //Debug.Log("PLAYER TOWER COLLISION ENTER");
+            book.slideIn();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other) {
+        //Debug.Log("PLAYER COLLISION EXIT");
+        if (other.gameObject.CompareTag("CentralTower")) {
+            //Debug.Log("PLAYER TOWER COLLISION EXIT");
+            book.slideOut();
+        }
     }
 }
