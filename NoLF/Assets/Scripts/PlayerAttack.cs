@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    private Transform attackTransform;
+    [SerializeField] public Transform attackTransform;
     private float attackRange = 1.5f;
     private LayerMask attackableLayer;
     private float nextAttackTime;
