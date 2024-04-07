@@ -20,13 +20,13 @@ public class Movement : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         // Calculate the movement vector
-        Vector2 movement = new Vector2(horizontalInput, verticalInput);
+        //Vector2 movement = new Vector2(horizontalInput, verticalInput);
 
         // Normalize the vector to ensure constant speed in all directions
-        movement.Normalize();
+        //movement.Normalize();
 
         // Move the character
-        rb.velocity = new Vector2(movement.x * speed, movement.y * speed);
+        rb.velocity = new Vector2(horizontalInput * speed, verticalInput * speed);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
