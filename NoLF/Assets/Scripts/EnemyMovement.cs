@@ -42,11 +42,7 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    /*private void OnCollisionEnter2D(nail) {
-        health -=1;
-    }*/
-
-    private void OnTriggerEnter2D(Collider2D enemy)
+    /*private void OnTriggerEnter2D(Collider2D enemy)
     {
         //if the enemy collides with anything with the hitbox tag it takes damage
         if(enemy.CompareTag("Hitbox")) 
@@ -61,5 +57,5 @@ public class EnemyMovement : MonoBehaviour
                 GameObject.Destroy(gameObject);
             }
         }
-    }
+    }*/
 }

@@ -51,6 +51,7 @@ MonoBehaviour:
   _targetPosition: {x: 0, y: 0}
   health: 1
   scrap: {fileID: 4925162864503927945, guid: 9d897e763017ab84cb9fe5d85bb52a95, type: 3}
+  score: {fileID: 0}
 --- !u!61 &3829170334417210860
 BoxCollider2D:
   m_ObjectHideFlags: 0
