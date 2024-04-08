@@ -5,6 +5,7 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField] public Transform attackTransform;
+    [SerializeField] private int dmg = 1;
     private float attackRange = 1.5f;
     private LayerMask attackableLayer;
     private float nextAttackTime;
@@ -24,8 +25,7 @@ public class NewBehaviourScript : MonoBehaviour
         }
     }
 
-    void Attack()
-    {
+    void Attack() {
         //hits = Physics2D.CircleCastAll(attackTransform.position, attackRange, transform.right, 0f, attackableLayer);
     }
 }

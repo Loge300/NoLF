@@ -13,10 +13,12 @@ public class Nail : MonoBehaviour
 
     private Transform target;
 
+    //gets target from turret script
     public void SetTarget(Transform _target) {
         target = _target;
     }
 
+    //tracks position of target and follows it
     private void FixedUpdate() {
         if(!target) return;
 
@@ -25,7 +27,9 @@ public class Nail : MonoBehaviour
         rb.velocity = direction * nailSpeed;
     }
 
+    //does damage and deletes itself
     private void OnCollisionEnter2D(Collision2D other) {
+        //calls the TakeDamage method from EnemyMovement
         other.gameObject.GetComponent<EnemyMovement>().TakeDamage(dmg);
         Destroy(gameObject);
     }

@@ -33,6 +33,7 @@ public class EnemyMovement : MonoBehaviour
         // Use this code for testing decreasing helth related code
     }
 
+    //method for taking damage
     public void TakeDamage(int dmg) {
         health -= dmg;
         if(health <= 0) {
@@ -41,21 +42,4 @@ public class EnemyMovement : MonoBehaviour
             GameObject.Destroy(gameObject);
         }
     }
-
-    /*private void OnTriggerEnter2D(Collider2D enemy)
-    {
-        //if the enemy collides with anything with the hitbox tag it takes damage
-        if(enemy.CompareTag("Hitbox")) 
-        {
-            Debug.Log("Damage Dealt");
-            health = health - 1;
-            //if the enemies health reaches zero it spawns a whatever game object is connected to the scrap variable and then is destroyed.  
-            if (health <= 0)
-            {
-                Instantiate(scrap, transform.position, transform.rotation);
-                score.increaseScore(10);
-                GameObject.Destroy(gameObject);
-            }
-        }
-    }*/
 }

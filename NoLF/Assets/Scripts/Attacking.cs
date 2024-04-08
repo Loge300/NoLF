@@ -6,6 +6,7 @@ public class Attacking : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    [SerializeField] private int dmg = 1;
     private Camera mainCam;
     private Vector3 mousePos;
     public GameObject attackSwing;
@@ -48,5 +49,10 @@ public class Attacking : MonoBehaviour
             Instantiate(attackSwing, attackSwingTransform.position, Quaternion.identity);
         }
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        //calls the TakeDamage method from EnemyMovement
+        other.gameObject.GetComponent<EnemyMovement>().TakeDamage(dmg);
     }
 }

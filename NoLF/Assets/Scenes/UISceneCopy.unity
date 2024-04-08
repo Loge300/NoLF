@@ -12684,6 +12684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackTransform: {fileID: 892522977}
+  dmg: 1
 --- !u!114 &892522975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20779,6 +20780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16fb300c363e0f4c81354df7f4e8f23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dmg: 1
   attackSwing: {fileID: 1947687623829080658, guid: 631e5a7ad5f299c4c99ea03137707fac, type: 3}
   attackSwingTransform: {fileID: 30416395}
   canFire: 1

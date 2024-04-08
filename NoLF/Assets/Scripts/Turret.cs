@@ -39,12 +39,14 @@ public class Turret : MonoBehaviour
         }
     }
 
+    //creates a nail object in direction of the target
     private void Shoot() {
         GameObject nailObj = Instantiate(nailPrefab, firingPoint.position, Quaternion.identity);
         Nail nailScript = nailObj.GetComponent<Nail>();
         nailScript.SetTarget(target);
     }
 
+    //creates a range and finds a target that enters range
     private void FindTarget() {
         RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, targetingRange, (Vector2)transform.position, 0f, enemyMask);
         if(hits.Length > 0) {
@@ -52,6 +54,7 @@ public class Turret : MonoBehaviour
         }
     }
 
+    //tracks target
     private void RotateTowardsTarget() {
         float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg + -90f;
 
@@ -59,10 +62,12 @@ public class Turret : MonoBehaviour
         turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 
+    //sees if a target is in range
     private bool CheckTargetIsInRange() {
         return Vector2.Distance(target.position, transform.position) <= targetingRange;
     }
 
+    //shows range
     private void OnDrawGizmosSelected() {
         //Handles.color = Color.cyan;
         //Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
