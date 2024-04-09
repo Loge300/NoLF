@@ -11,11 +11,17 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private int health = 1;
     [SerializeField] private GameObject scrap;
     public Score score;
+    public Boards boards;
+    public Wires wires;
 
     private void Start()
     {
         GameObject scoreObject = GameObject.Find("ScoreDisplay");
+        GameObject boardObject = GameObject.Find("BoardCount");
+        GameObject wireObject = GameObject.Find("WireCount");
         score = scoreObject.GetComponent<Score>();
+        boards = boardObject.GetComponent<Boards>();
+        wires = wireObject.GetComponent<Wires>();
         //Sets the target of the enemy to the center of the scene
         _targetPosition = Vector2.zero;
     }
@@ -39,6 +45,8 @@ public class EnemyMovement : MonoBehaviour
         if(health <= 0) {
             Instantiate(scrap, transform.position, transform.rotation);
             score.increaseScore(10);
+            boards.increaseBoards(1);
+            wires.increaseWires(2);
             GameObject.Destroy(gameObject);
         }
     }
