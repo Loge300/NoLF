@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8403762400904139144}
   - component: {fileID: -884008171099138562}
   - component: {fileID: -4121806026972682140}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SwingHitbox
   m_TagString: Hitbox
   m_Icon: {fileID: 0}
@@ -171,3 +171,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f7bc5006f7539a438fd6f843e7a8ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dmg: 1

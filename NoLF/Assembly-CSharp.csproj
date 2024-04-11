@@ -60,12 +60,13 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Attacking.cs" />
     <Compile Include="Assets\Scripts\Turret.cs" />
     <Compile Include="Assets\Scripts\Nail.cs" />
     <Compile Include="Assets\Scripts\CentralTowerControl.cs" />
     <Compile Include="Assets\Scripts\Main Menu.cs" />
-    <Compile Include="Assets\SwingHitbox.cs" />
+    <Compile Include="Assets\Scripts\Attacking.cs" />
+    <Compile Include="Assets\Scripts\UI\Boards.cs" />
+    <Compile Include="Assets\Scripts\SwingHitbox.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Highlight.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\Scripts\UI\CraftingBook.cs" />
     <Compile Include="Assets\Scripts\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\UI\Timer.cs" />
+    <Compile Include="Assets\Scripts\UI\Wires.cs" />
     <Compile Include="Assets\Scripts\UI\Score.cs" />
   </ItemGroup>
   <ItemGroup>
