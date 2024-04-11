@@ -10346,14 +10346,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpike
       objectReference: {fileID: 0}
-    - target: {fileID: 5269651819957352660, guid: 8c7d7c00b69d78c418495ac2928da78e, type: 3}
-      propertyPath: m_SortingLayer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5269651819957352660, guid: 8c7d7c00b69d78c418495ac2928da78e, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 2054062585
-      objectReference: {fileID: 0}
     - target: {fileID: 8565046456145316498, guid: 8c7d7c00b69d78c418495ac2928da78e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.9028296
@@ -15655,7 +15647,7 @@ GameObject:
   - component: {fileID: 1102829190}
   - component: {fileID: 1102829189}
   - component: {fileID: 1102829188}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CentralBase
   m_TagString: CentralTower
   m_Icon: {fileID: 0}
@@ -24075,7 +24067,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1821954679}
   - component: {fileID: 1821954680}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ConstMCHN_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
