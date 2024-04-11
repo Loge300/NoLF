@@ -60,23 +60,23 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Turret.cs" />
-    <Compile Include="Assets\Scripts\Nail.cs" />
-    <Compile Include="Assets\Scripts\CentralTowerControl.cs" />
-    <Compile Include="Assets\Scripts\Main Menu.cs" />
-    <Compile Include="Assets\Scripts\Attacking.cs" />
-    <Compile Include="Assets\Scripts\UI\Boards.cs" />
-    <Compile Include="Assets\Scripts\SwingHitbox.cs" />
-    <Compile Include="Assets\Scripts\EnemySpawner.cs" />
-    <Compile Include="Assets\Scripts\Highlight.cs" />
-    <Compile Include="Assets\Scripts\Movement.cs" />
-    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
-    <Compile Include="Assets\Scripts\DrpShdow.cs" />
-    <Compile Include="Assets\Scripts\UI\CraftingBook.cs" />
-    <Compile Include="Assets\Scripts\PlayerAttack.cs" />
-    <Compile Include="Assets\Scripts\UI\Timer.cs" />
-    <Compile Include="Assets\Scripts\UI\Wires.cs" />
-    <Compile Include="Assets\Scripts\UI\Score.cs" />
+    <Compile Include="Assets\Resources\Scripts\PlayerAttack.cs" />
+    <Compile Include="Assets\Resources\Scripts\Attacking.cs" />
+    <Compile Include="Assets\Resources\Scripts\Movement.cs" />
+    <Compile Include="Assets\Resources\Scripts\UI\Boards.cs" />
+    <Compile Include="Assets\Resources\Scripts\Turret.cs" />
+    <Compile Include="Assets\Resources\Scripts\DrpShdow.cs" />
+    <Compile Include="Assets\Resources\Scripts\Nail.cs" />
+    <Compile Include="Assets\Resources\Scripts\EnemyMovement.cs" />
+    <Compile Include="Assets\Resources\Scripts\Highlight.cs" />
+    <Compile Include="Assets\Resources\Scripts\CentralTowerControl.cs" />
+    <Compile Include="Assets\Resources\Scripts\UI\Timer.cs" />
+    <Compile Include="Assets\Resources\Scripts\EnemySpawner.cs" />
+    <Compile Include="Assets\Resources\Scripts\UI\CraftingBook.cs" />
+    <Compile Include="Assets\Resources\Scripts\UI\Score.cs" />
+    <Compile Include="Assets\Resources\Scripts\Main Menu.cs" />
+    <Compile Include="Assets\Resources\Scripts\SwingHitbox.cs" />
+    <Compile Include="Assets\Resources\Scripts\UI\Wires.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
