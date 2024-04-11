@@ -9,7 +9,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float speed = 1f;
     [SerializeField] private Vector2 _targetPosition;
     [SerializeField] private int health = 1;
-    [SerializeField] private GameObject scrap;
+    //[SerializeField] private GameObject scrap;
     public Score score;
     public Boards boards;
     public Wires wires;
@@ -43,7 +43,7 @@ public class EnemyMovement : MonoBehaviour
     public void TakeDamage(int dmg) {
         health -= dmg;
         if(health <= 0) {
-            Instantiate(scrap, transform.position, transform.rotation);
+            //Instantiate(scrap, transform.position, transform.rotation);
             score.increaseScore(10);
             boards.increaseBoards(1);
             wires.increaseWires(2);
