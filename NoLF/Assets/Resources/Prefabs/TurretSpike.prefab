@@ -53,7 +53,7 @@ MonoBehaviour:
   nailPrefab: {fileID: 6020754059213204273, guid: 24749f56065f9824197ddacc2efa3286, type: 3}
   firingPoint: {fileID: 1468832601260890949}
   targetingRange: 5
-  rotationSpeed: 60
+  rotationSpeed: 120
   bps: 1
 --- !u!1 &1404008582823438222
 GameObject:
@@ -82,7 +82,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 2, y: 2, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8565046456145316498}
@@ -128,7 +128,7 @@ SpriteRenderer:
   m_SortingLayerID: 2054062585
   m_SortingLayer: 3
   m_SortingOrder: -1
-  m_Sprite: {fileID: 626450960, guid: 22608be7a4771fc44ae5e4f6be09c9b5, type: 3}
+  m_Sprite: {fileID: -413275396, guid: a3743670b84d2fa41a87d88bc3540b5d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -166,7 +166,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5310190384814099775}
@@ -212,7 +212,7 @@ SpriteRenderer:
   m_SortingLayerID: 2054062585
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2077027241, guid: 22608be7a4771fc44ae5e4f6be09c9b5, type: 3}
+  m_Sprite: {fileID: 1433050430, guid: a3743670b84d2fa41a87d88bc3540b5d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
