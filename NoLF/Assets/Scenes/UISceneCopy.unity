@@ -10346,6 +10346,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpike
       objectReference: {fileID: 0}
+    - target: {fileID: 4485876481636946757, guid: 8c7d7c00b69d78c418495ac2928da78e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1433050430, guid: a3743670b84d2fa41a87d88bc3540b5d, type: 3}
+    - target: {fileID: 5269651819957352660, guid: 8c7d7c00b69d78c418495ac2928da78e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -413275396, guid: a3743670b84d2fa41a87d88bc3540b5d, type: 3}
+    - target: {fileID: 6715837903428932498, guid: 8c7d7c00b69d78c418495ac2928da78e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715837903428932498, guid: 8c7d7c00b69d78c418495ac2928da78e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964145503297505198, guid: 8c7d7c00b69d78c418495ac2928da78e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964145503297505198, guid: 8c7d7c00b69d78c418495ac2928da78e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8565046456145316498, guid: 8c7d7c00b69d78c418495ac2928da78e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.9028296
