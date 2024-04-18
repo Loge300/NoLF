@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8403762400904139144}
   - component: {fileID: -884008171099138562}
   - component: {fileID: -4121806026972682140}
+  - component: {fileID: 4486566543379653999}
   m_Layer: 6
   m_Name: SwingHitbox
   m_TagString: Hitbox
@@ -172,3 +173,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+--- !u!114 &4486566543379653999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947687623829080658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcc5d7e78e56ce04a865d50b948c8975, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
