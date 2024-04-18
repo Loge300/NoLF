@@ -13868,7 +13868,8 @@ MonoBehaviour:
   time: 1.5
   _targetPosition: {x: 0, y: 0}
   enemies:
-  - {fileID: 4029552340784941687, guid: 5fb9f19d49687914595a35a433a00773, type: 3}
+  - {fileID: 7289613112941243139, guid: 7d77840c2b933114682386e3500011d3, type: 3}
+  - {fileID: 8120407863677986351, guid: 03b49b6af100d904c8202f833dcff9c3, type: 3}
 --- !u!4 &953180082
 Transform:
   m_ObjectHideFlags: 0
@@ -15804,7 +15805,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102829187}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
