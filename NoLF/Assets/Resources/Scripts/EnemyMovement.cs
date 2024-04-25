@@ -14,6 +14,9 @@ public class EnemyMovement : MonoBehaviour
     public Boards boards;
     public Wires wires;
 
+    Animator animator_B;
+    SpriteRenderer sprite_Renderer;
+
     private void Start()
     {
         GameObject scoreObject = GameObject.Find("ScoreDisplay");
@@ -24,6 +27,9 @@ public class EnemyMovement : MonoBehaviour
         wires = wireObject.GetComponent<Wires>();
         //Sets the target of the enemy to the center of the scene
         _targetPosition = Vector2.zero;
+
+        animator_B = gameObject.GetComponent<Animator>();
+        sprite_Renderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     /*I dont know why this code is here but it might be useful later.  Keep it for now then remove it for the final project if not needed.  
@@ -35,7 +41,26 @@ public class EnemyMovement : MonoBehaviour
     private void Update() {
         //moves the enemy toward the center every frame at the enemies speed variable
         transform.position = Vector2.MoveTowards(transform.position, _targetPosition, speed * Time.deltaTime);
-                
+
+        if (transform.position.y < 0 && transform.position.x > 0) //represents bottom right quad
+        {
+            animator_B.SetBool("MoveUp", true);
+            sprite_Renderer.flipX = true;
+        }
+        else if (transform.position.y < 0) //represents bottom left quad
+        {
+            animator_B.SetBool("MoveUp", true);
+            sprite_Renderer.flipX = false;
+        }
+        else if (transform.position.y > 0 && transform.position.x < 0) 
+        {
+            animator_B.SetBool("MoveUp", false);
+            sprite_Renderer.flipX = true;
+        }
+        else //represents top right quad
+        {
+            animator_B.SetBool("MoveUp", false);
+        }
         // Use this code for testing decreasing helth related code
     }
 
