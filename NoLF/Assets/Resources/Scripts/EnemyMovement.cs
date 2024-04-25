@@ -42,19 +42,27 @@ public class EnemyMovement : MonoBehaviour
         //moves the enemy toward the center every frame at the enemies speed variable
         transform.position = Vector2.MoveTowards(transform.position, _targetPosition, speed * Time.deltaTime);
 
-        if (transform.position.y < 0 && transform.position.x > 0) //represents bottom right quad
+        if (transform.position.y < 0 && transform.position.x > 0 && !this.name.Contains("Formork")) //represents bottom right quad and doesn't affect formork
         {
             animator_B.SetBool("MoveUp", true);
             sprite_Renderer.flipX = true;
         }
-        else if (transform.position.y < 0) //represents bottom left quad
+        else if (transform.position.y < 0 && !this.name.Contains("Formork")) //represents bottom left quad and doesn't affect formork
         {
             animator_B.SetBool("MoveUp", true);
             sprite_Renderer.flipX = false;
         }
-        else if (transform.position.y > 0 && transform.position.x < 0) 
+        else if (transform.position.y < 0 && transform.position.x < 0 && this.name.Contains("Formork")) //formork specific code for bottom left quad
+        {
+            sprite_Renderer.flipX = true;
+        }
+        else if (transform.position.y > 0 && transform.position.x < 0 && !this.name.Contains("Formork")) //represents top left quad and doesn't affect formork
         {
             animator_B.SetBool("MoveUp", false);
+            sprite_Renderer.flipX = true;
+        }
+        else if (transform.position.y > 0 && transform.position.x < 0 && this.name.Contains("Formork")) //formork specific code for top left quad
+        {
             sprite_Renderer.flipX = true;
         }
         else //represents top right quad
