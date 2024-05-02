@@ -49,6 +49,11 @@ public class CraftButton : MonoBehaviour
                 nails.decreaseNails(4);
                 plastic.decreasePlastic(3);
                 towerHeld = 0;
+            } else if (book.currentPage == 1) {
+                book.slideOut();
+                boards.decreaseBoards(4);
+                wires.decreaseWires(3);
+                towerHeld = 1;
             }
         }
     }
