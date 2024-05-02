@@ -22,7 +22,9 @@ public class SwingHitbox : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        other.gameObject.GetComponent<EnemyMovement>().TakeDamage(dmg);
+        if (other.gameObject.tag == "Enemy") {
+            other.gameObject.GetComponent<EnemyMovement>().TakeDamage(dmg);
+        }
         Destroy(gameObject);
     }
 }

@@ -30,7 +30,9 @@ public class Nail : MonoBehaviour
     //does damage and deletes itself
     private void OnCollisionEnter2D(Collision2D other) {
         //calls the TakeDamage method from EnemyMovement
-        other.gameObject.GetComponent<EnemyMovement>().TakeDamage(dmg);
+        if (other.gameObject.tag == "Enemy") {
+            other.gameObject.GetComponent<EnemyMovement>().TakeDamage(dmg);
+        }
         Destroy(gameObject);
     }
 }
