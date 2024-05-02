@@ -9,10 +9,13 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float speed = 1f;
     [SerializeField] private Vector2 _targetPosition;
     [SerializeField] private int health = 1;
+    [SerializeField] public int enemyID;
     //[SerializeField] private GameObject scrap;
     public Score score;
     public Boards boards;
     public Wires wires;
+    public Plastic plastic;
+    public NailsMaterial nails;
 
     Animator animator_B;
     SpriteRenderer sprite_Renderer;
@@ -22,9 +25,13 @@ public class EnemyMovement : MonoBehaviour
         GameObject scoreObject = GameObject.Find("ScoreDisplay");
         GameObject boardObject = GameObject.Find("BoardCount");
         GameObject wireObject = GameObject.Find("WireCount");
+        GameObject nailsObject = GameObject.Find("NailCount");
+        GameObject plasticObject = GameObject.Find("PlasticCount");
         score = scoreObject.GetComponent<Score>();
         boards = boardObject.GetComponent<Boards>();
         wires = wireObject.GetComponent<Wires>();
+        nails = nailsObject.GetComponent<NailsMaterial>();
+        plastic = plasticObject.GetComponent<Plastic>();
         //Sets the target of the enemy to the center of the scene
         _targetPosition = Vector2.zero;
 
@@ -78,8 +85,14 @@ public class EnemyMovement : MonoBehaviour
         if(health <= 0) {
             //Instantiate(scrap, transform.position, transform.rotation);
             score.increaseScore(10);
-            boards.increaseBoards(1);
-            wires.increaseWires(2);
+            if (enemyID == 0) {
+                boards.increaseBoards(1);
+                nails.increaseNails(2);
+            }
+            if (enemyID == 1) {
+                wires.increaseWires(2);
+                plastic.increasePlastic(1);
+            }
             GameObject.Destroy(gameObject);
         }
     }

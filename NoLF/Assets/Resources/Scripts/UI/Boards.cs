@@ -16,6 +16,10 @@ public class Boards : MonoBehaviour
         boards += increase;
         boardText.text = boards.ToString();
     }
+    public void decreaseBoards(int decrease) {
+        boards -= decrease;
+        boardText.text = boards.ToString();
+    }
 
     public void resetBoards() {
         boards = 0;

@@ -16,6 +16,10 @@ public class Wires : MonoBehaviour
         wires += increase;
         wireText.text = wires.ToString();
     }
+    public void decreaseWires(int decrease) {
+        wires -= decrease;
+        wireText.text = wires.ToString();
+    }
 
     public void resetWires() {
         wires = 0;
