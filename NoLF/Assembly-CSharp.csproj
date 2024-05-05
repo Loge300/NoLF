@@ -60,12 +60,14 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Resources\Scripts\UI\CraftButton.cs" />
     <Compile Include="Assets\Resources\Scripts\PlayerAttack.cs" />
     <Compile Include="Assets\Resources\Scripts\Attacking.cs" />
     <Compile Include="Assets\Resources\Scripts\Movement.cs" />
     <Compile Include="Assets\Resources\Scripts\UI\Boards.cs" />
     <Compile Include="Assets\Resources\Scripts\Turret.cs" />
     <Compile Include="Assets\Resources\Scripts\DrpShdow.cs" />
+    <Compile Include="Assets\Resources\Scripts\UI\MenuArrow.cs" />
     <Compile Include="Assets\Resources\Scripts\Nail.cs" />
     <Compile Include="Assets\Resources\Scripts\EnemyMovement.cs" />
     <Compile Include="Assets\Resources\Scripts\Highlight.cs" />
@@ -73,10 +75,14 @@
     <Compile Include="Assets\Resources\Scripts\UI\Timer.cs" />
     <Compile Include="Assets\Resources\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Resources\Scripts\UI\CraftingBook.cs" />
+    <Compile Include="Assets\Resources\Scripts\UI\Plastic.cs" />
+    <Compile Include="Assets\Resources\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Resources\Scripts\RotateToMouse.cs" />
+    <Compile Include="Assets\Resources\Scripts\UI\NailsMaterial.cs" />
     <Compile Include="Assets\Resources\Scripts\UI\Score.cs" />
     <Compile Include="Assets\Resources\Scripts\Main Menu.cs" />
     <Compile Include="Assets\Resources\Scripts\SwingHitbox.cs" />
+    <Compile Include="Assets\Resources\Scripts\Plot.cs" />
     <Compile Include="Assets\Resources\Scripts\UI\Wires.cs" />
   </ItemGroup>
   <ItemGroup>
