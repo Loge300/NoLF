@@ -63,6 +63,7 @@ public class EnemySpawner : MonoBehaviour
             enemyCount += 1;
             yield return new WaitForSeconds(timeBetweenWaves);
             waveCount += 1;
+            Debug.Log("wave complete");
             isWaveActive = true;
         }
 

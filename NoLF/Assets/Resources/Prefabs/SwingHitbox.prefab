@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -884008171099138562}
   - component: {fileID: -4121806026972682140}
   - component: {fileID: 4486566543379653999}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: SwingHitbox
   m_TagString: Hitbox
   m_Icon: {fileID: 0}
