@@ -8,14 +8,13 @@ public class BuildManager : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private GameObject[] towerPrefabs;
-
-    private int selectedTower = 0;
+    [SerializeField] private CraftButton button;
 
     private void Awake() {
         main = this;
     }
 
     public GameObject GetSelectedTower() {
-        return towerPrefabs[selectedTower];
+        return towerPrefabs[button.towerHeld];
     }
 }
