@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Resources\Scripts\UI\CraftButton.cs" />
     <Compile Include="Assets\Resources\Scripts\PlayerAttack.cs" />
+    <Compile Include="Assets\Resources\Scripts\SpinHit.cs" />
     <Compile Include="Assets\Resources\Scripts\Attacking.cs" />
     <Compile Include="Assets\Resources\Scripts\Movement.cs" />
     <Compile Include="Assets\Resources\Scripts\UI\Boards.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Assets\Resources\Scripts\UI\Score.cs" />
     <Compile Include="Assets\Resources\Scripts\Main Menu.cs" />
     <Compile Include="Assets\Resources\Scripts\SwingHitbox.cs" />
+    <Compile Include="Assets\Resources\Scripts\TurretSpin.cs" />
     <Compile Include="Assets\Resources\Scripts\Plot.cs" />
     <Compile Include="Assets\Resources\Scripts\UI\Wires.cs" />
   </ItemGroup>

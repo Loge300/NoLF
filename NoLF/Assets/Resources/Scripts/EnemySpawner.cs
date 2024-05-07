@@ -43,7 +43,7 @@ public class EnemySpawner : MonoBehaviour
         {
             //setting of spawn position and selection of which enemy will be spawned
             Vector2 spawnPos = _targetPosition;
-            spawnPos += Random.insideUnitCircle.normalized * spawnRadius;
+            
             int randomEnemy = Random.Range(0, enemies.Length);
             isWaveActive = false;
 
@@ -53,7 +53,7 @@ public class EnemySpawner : MonoBehaviour
                 //ActivateWaveText();
                 yield return new WaitForSeconds(nextWaveTime);
                 //wave
-
+                spawnPos = Random.insideUnitCircle.normalized * spawnRadius;
                 Instantiate(enemies[Random.Range(0, enemies.Length)], spawnPos, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate);
             }
@@ -63,6 +63,7 @@ public class EnemySpawner : MonoBehaviour
             enemyCount += 1;
             yield return new WaitForSeconds(timeBetweenWaves);
             waveCount += 1;
+            Debug.Log("wave complete");
             isWaveActive = true;
         }
 
