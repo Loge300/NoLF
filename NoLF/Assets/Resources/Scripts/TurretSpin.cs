@@ -12,7 +12,7 @@ public class TurretSpin : MonoBehaviour
 
     [Header("Attribute")]
     [SerializeField] private float targetingRange = 5f;
-    [SerializeField] private float bps = 2f;
+    [SerializeField] private float bps = 1f;
 
     private Transform target;
     private float timeUntilFire;
