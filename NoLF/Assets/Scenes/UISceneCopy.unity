@@ -13979,7 +13979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3bec7f1318f8b4ab0e4fe1958abb7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRadius: 7
+  spawnRadius: 14
   _targetPosition: {x: 0, y: 0}
   enemies:
   - {fileID: 7289613112941243139, guid: 7d77840c2b933114682386e3500011d3, type: 3}

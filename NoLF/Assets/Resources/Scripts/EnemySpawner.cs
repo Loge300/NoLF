@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]
-    private float spawnRadius = 7;
+    private float spawnRadius = 14;
     private bool isWaveActive = true;
     private bool stopSpawning = false;
     [SerializeField] private Vector2 _targetPosition;
