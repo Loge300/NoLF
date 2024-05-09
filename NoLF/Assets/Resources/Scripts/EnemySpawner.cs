@@ -61,7 +61,7 @@ public class EnemySpawner : MonoBehaviour
 
             //Makes the next wave harder and resets other variables needed.  
             spawnRate -= 0.2f;
-            enemyCount += 3;
+            enemyCount += 1;
             yield return new WaitForSeconds(timeBetweenWaves);
             waveCount += 1;
             Debug.Log("wave complete: " + waveCount); //You can replace this line with the stuff for the UI updating
