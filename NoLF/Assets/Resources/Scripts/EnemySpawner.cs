@@ -12,7 +12,7 @@ public class EnemySpawner : MonoBehaviour
 
     public GameObject[] enemies;
 
-    private int waveCount;
+    private int waveCount;  //Needs to be connected to the UI
     private int enemyCount;
     private float nextWaveTime = 1.0f;
     private float spawnRate = 1.0f;
@@ -47,11 +47,12 @@ public class EnemySpawner : MonoBehaviour
             int randomEnemy = Random.Range(0, enemies.Length);
             isWaveActive = false;
 
+            yield return new WaitForSeconds(nextWaveTime);
             //spawns enemies one at a time based on the spawn rate but waits to do so unitl the wave timer is complete
             for (int i = 0; i < enemyCount; i++) 
             {
                 //ActivateWaveText();
-                yield return new WaitForSeconds(nextWaveTime);
+                
                 //wave
                 spawnPos = Random.insideUnitCircle.normalized * spawnRadius;
                 Instantiate(enemies[Random.Range(0, enemies.Length)], spawnPos, Quaternion.identity);
@@ -60,10 +61,10 @@ public class EnemySpawner : MonoBehaviour
 
             //Makes the next wave harder and resets other variables needed.  
             spawnRate -= 0.2f;
-            enemyCount += 1;
+            enemyCount += 3;
             yield return new WaitForSeconds(timeBetweenWaves);
             waveCount += 1;
-            Debug.Log("wave complete: " + waveCount);
+            Debug.Log("wave complete: " + waveCount); //You can replace this line with the stuff for the UI updating
             isWaveActive = true;
         }
 
