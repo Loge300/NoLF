@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class CentralTowerControl : MonoBehaviour
@@ -30,6 +31,7 @@ public class CentralTowerControl : MonoBehaviour
             if (health <= 0)
             {
                 GameObject.Destroy(gameObject);
+                SceneManager.LoadScene("GameOver");
             }
         }
     }
