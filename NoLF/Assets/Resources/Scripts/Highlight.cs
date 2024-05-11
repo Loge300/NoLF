@@ -9,6 +9,8 @@ public class Highlight : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 {
     public GameObject shadowBlack;
     public GameObject shadowRed;
+    [SerializeField] AudioSource selection;
+
     // When highlighted with mouse.
     public void Start()
     {
@@ -17,6 +19,10 @@ public class Highlight : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
+        if (!selection.isPlaying) 
+        {
+            selection.Play();
+        }
         shadowBlack.SetActive(false);
         shadowRed.SetActive(true);
     }

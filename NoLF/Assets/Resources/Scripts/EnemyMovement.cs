@@ -95,7 +95,6 @@ public class EnemyMovement : MonoBehaviour
             score.increaseScore(10);
             if (!sfxSource.isPlaying)
             {
-                Debug.Log("Audio Should Play");
                 sfxSource.Play();
             }
 
