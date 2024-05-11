@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private Vector2 _targetPosition;
     [SerializeField] private int health = 1;
     [SerializeField] public int enemyID;
+
+    [SerializeField] AudioSource sfxSource;
+    [SerializeField] AudioClip hitSound;
+
     //[SerializeField] private GameObject scrap;
     public Score score;
     public Boards boards;
@@ -37,6 +42,8 @@ public class EnemyMovement : MonoBehaviour
 
         animator_B = gameObject.GetComponent<Animator>();
         sprite_Renderer = gameObject.GetComponent<SpriteRenderer>();
+
+        sfxSource = GetComponent<AudioSource>();
     }
 
     /*I dont know why this code is here but it might be useful later.  Keep it for now then remove it for the final project if not needed.  
@@ -82,18 +89,34 @@ public class EnemyMovement : MonoBehaviour
     //method for taking damage
     public void TakeDamage(int dmg) {
         health -= dmg;
-        if(health <= 0) {
+        if (health <= 0)
+        {
             //Instantiate(scrap, transform.position, transform.rotation);
             score.increaseScore(10);
-            if (enemyID == 0) {
+            if (!sfxSource.isPlaying)
+            {
+                Debug.Log("Audio Should Play");
+                sfxSource.Play();
+            }
+
+            if (enemyID == 0)
+            {
                 boards.increaseBoards(1);
                 nails.increaseNails(2);
             }
-            if (enemyID == 1) {
+            if (enemyID == 1)
+            {
                 wires.increaseWires(2);
                 plastic.increasePlastic(1);
             }
-            GameObject.Destroy(gameObject);
+
+            //Moves the enemy very far off screen to allow the sound to play first but also still appear that the enemy was killed
+            transform.position = Vector3.one * 9999f;
+            GameObject.Destroy(gameObject, hitSound.length);
+        }
+        else 
+        {
+            sfxSource.Play();
         }
     }
 }

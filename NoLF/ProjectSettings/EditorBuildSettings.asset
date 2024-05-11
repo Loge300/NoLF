@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UISceneCopy.unity
     guid: 048de7e6efa26c14e8f4472ba14d7fd5
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 7ac74ceaa00686448898854bbf490cd1
   m_configObjects: {}
