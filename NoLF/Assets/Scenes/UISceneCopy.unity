@@ -1820,6 +1820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 112167722}
+  waveText: {fileID: 237940582}
 --- !u!1001 &113046205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3368,6 +3369,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boardText: {fileID: 216247705}
   boards: 0
+--- !u!114 &237940582 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4371339391951191116, guid: 7fccb6848a4402d47943ec60bee9564d, type: 3}
+  m_PrefabInstance: {fileID: 5635966875570388864}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &239411911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13981,9 +13993,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRadius: 14
   _targetPosition: {x: 0, y: 0}
+  timer: {fileID: 112167724}
   enemies:
   - {fileID: 7289613112941243139, guid: 7d77840c2b933114682386e3500011d3, type: 3}
   - {fileID: 8120407863677986351, guid: 03b49b6af100d904c8202f833dcff9c3, type: 3}
+  waveCount: 0
 --- !u!4 &953180082
 Transform:
   m_ObjectHideFlags: 0
@@ -15999,6 +16013,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  score: {fileID: 321188534}
+  spawner: {fileID: 953180081}
 --- !u!4 &1102829192
 Transform:
   m_ObjectHideFlags: 0
@@ -28909,9 +28925,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1936174972900578372, guid: 7fccb6848a4402d47943ec60bee9564d, type: 3}
+      propertyPath: m_text
+      value: 0:06
+      objectReference: {fileID: 0}
     - target: {fileID: 2284331407431863259, guid: 7fccb6848a4402d47943ec60bee9564d, type: 3}
       propertyPath: m_Name
       value: HUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884954148919331176, guid: 7fccb6848a4402d47943ec60bee9564d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 250.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884954148919331176, guid: 7fccb6848a4402d47943ec60bee9564d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 46.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884954148919331176, guid: 7fccb6848a4402d47943ec60bee9564d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -211.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884954148919331176, guid: 7fccb6848a4402d47943ec60bee9564d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -171.78
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -8,25 +8,30 @@ public class Timer : MonoBehaviour
 {
 
     [SerializeField] public TMP_Text timerText;
+    [SerializeField] public TMP_Text waveText;
     int seconds;
     int minutes;
     // Start is called before the first frame update
     void Start()
     {
-        resetTime();
+        InvokeRepeating("IncreaseTime", 1f, 1f);
+        //waveText.text = "Wave<br>" + wave;
+    }
+
+    public void setTime(int secs) {
+        seconds = secs % 60;
+        minutes = secs / 60;
+        CancelInvoke();
         InvokeRepeating("IncreaseTime", 1f, 1f);
     }
 
-    void resetTime() {
-        minutes = 5;
-        seconds = 0;
+    public void setWave(int wave) {
+        waveText.text = "Wave<br>" + wave;
     }
 
     void IncreaseTime() {
         if (seconds == 0) {
-            if (minutes == 0) {
-                resetTime();
-            } else {
+            if (minutes != 0) {
                 minutes--;
                 seconds = 59;
             }

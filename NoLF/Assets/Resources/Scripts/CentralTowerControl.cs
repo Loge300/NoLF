@@ -7,6 +7,8 @@ using UnityEngine.UIElements;
 public class CentralTowerControl : MonoBehaviour
 {
     [SerializeField] private int health = 10;
+    [SerializeField] private Score score;
+    [SerializeField] private EnemySpawner spawner;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +32,8 @@ public class CentralTowerControl : MonoBehaviour
             //if the enemies health reaches zero it spawns a whatever game object is connected to the scrap variable and then is destroyed.  
             if (health <= 0)
             {
-                GameObject.Destroy(gameObject);
+                PlayerPrefs.SetInt("lastscore", score.score);
+                PlayerPrefs.SetInt("lastwave", spawner.waveCount);
                 SceneManager.LoadScene("GameOver");
             }
         }

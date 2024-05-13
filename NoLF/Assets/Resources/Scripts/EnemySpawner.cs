@@ -9,10 +9,11 @@ public class EnemySpawner : MonoBehaviour
     private bool isWaveActive = true;
     private bool stopSpawning = false;
     [SerializeField] private Vector2 _targetPosition;
+    [SerializeField] private Timer timer;
 
     public GameObject[] enemies;
 
-    private int waveCount;  //Needs to be connected to the UI
+    public int waveCount;  //Needs to be connected to the UI
     private int enemyCount;
     private float nextWaveTime = 1.0f;
     private float spawnRate = 1.0f;
@@ -30,17 +31,15 @@ public class EnemySpawner : MonoBehaviour
         StartCoroutine(spawnAWave());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
 
-    }
 
     IEnumerator spawnAWave() 
     {
         while (isWaveActive == true && stopSpawning == false) 
         {
+            int totalTime = (int)(1 + (enemyCount * spawnRate) + timeBetweenWaves);
+            timer.setTime(totalTime);
+            timer.setWave(waveCount);
             //setting of spawn position and selection of which enemy will be spawned
             Vector2 spawnPos = _targetPosition;
             

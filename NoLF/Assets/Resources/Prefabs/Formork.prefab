@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 2.8942, y: 2.8942, z: 1.4471}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -128,6 +128,7 @@ MonoBehaviour:
   enemyID: 1
   sfxSource: {fileID: 2731183669340015400}
   hitSound: {fileID: 8300000, guid: aff01abbf0ef64a4caec16c82b14c526, type: 3}
+  spawner: {fileID: 0}
   score: {fileID: 0}
   boards: {fileID: 0}
   wires: {fileID: 0}

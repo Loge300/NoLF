@@ -14,6 +14,7 @@ public class EnemyMovement : MonoBehaviour
 
     [SerializeField] AudioSource sfxSource;
     [SerializeField] AudioClip hitSound;
+    [SerializeField] EnemySpawner spawner;
 
     //[SerializeField] private GameObject scrap;
     public Score score;
@@ -32,11 +33,13 @@ public class EnemyMovement : MonoBehaviour
         GameObject wireObject = GameObject.Find("WireCount");
         GameObject nailsObject = GameObject.Find("NailCount");
         GameObject plasticObject = GameObject.Find("PlasticCount");
+        GameObject spawnerObject = GameObject.Find("EnemySpawner");
         score = scoreObject.GetComponent<Score>();
         boards = boardObject.GetComponent<Boards>();
         wires = wireObject.GetComponent<Wires>();
         nails = nailsObject.GetComponent<NailsMaterial>();
         plastic = plasticObject.GetComponent<Plastic>();
+        spawner = spawnerObject.GetComponent<EnemySpawner>();
         //Sets the target of the enemy to the center of the scene
         _targetPosition = Vector2.zero;
 
@@ -98,15 +101,25 @@ public class EnemyMovement : MonoBehaviour
                 sfxSource.Play();
             }
 
-            if (enemyID == 0)
-            {
-                boards.increaseBoards(1);
-                nails.increaseNails(2);
-            }
-            if (enemyID == 1)
-            {
-                wires.increaseWires(2);
-                plastic.increasePlastic(1);
+            //check if it'll drop stuff
+            if (spawner.waveCount > 0) {
+                float dropOdds = 200.0f / spawner.waveCount;
+                float willDrop = Random.Range(0.0f, 100.0f);
+                if (willDrop < dropOdds) {
+                    Debug.Log("This enemy dropped items");
+                    if (enemyID == 0)
+                    {
+                        boards.increaseBoards(1);
+                        nails.increaseNails(2);
+                    }
+                    if (enemyID == 1)
+                    {
+                        wires.increaseWires(2);
+                        plastic.increasePlastic(1);
+                    }
+                } else {
+                    Debug.Log("This enemy won't drop anything");
+                }
             }
 
             //Moves the enemy very far off screen to allow the sound to play first but also still appear that the enemy was killed
