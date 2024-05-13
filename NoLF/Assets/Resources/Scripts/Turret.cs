@@ -15,6 +15,7 @@ public class Turret : MonoBehaviour
     [SerializeField] private float targetingRange = 5f;
     [SerializeField] private float rotationSpeed = 15f;
     [SerializeField] private float bps = 1f;
+    [SerializeField] AudioSource fireSound;
 
     private Transform target;
     private float timeUntilFire;
@@ -41,6 +42,7 @@ public class Turret : MonoBehaviour
 
     //creates a nail object in direction of the target
     private void Shoot() {
+        fireSound.Play();
         GameObject nailObj = Instantiate(nailPrefab, firingPoint.position, Quaternion.identity);
         Nail nailScript = nailObj.GetComponent<Nail>();
         nailScript.SetTarget(target);

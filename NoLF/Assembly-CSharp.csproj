@@ -68,11 +68,14 @@
     <Compile Include="Assets\Resources\Scripts\UI\Boards.cs" />
     <Compile Include="Assets\Resources\Scripts\Turret.cs" />
     <Compile Include="Assets\Resources\Scripts\DrpShdow.cs" />
+    <Compile Include="Assets\Resources\Scripts\UI\FinalScoreDisplay.cs" />
     <Compile Include="Assets\Resources\Scripts\UI\MenuArrow.cs" />
     <Compile Include="Assets\Resources\Scripts\Nail.cs" />
     <Compile Include="Assets\Resources\Scripts\EnemyMovement.cs" />
     <Compile Include="Assets\Resources\Scripts\Highlight.cs" />
     <Compile Include="Assets\Resources\Scripts\CentralTowerControl.cs" />
+    <Compile Include="Assets\Resources\Scripts\UI\GameOverScreen.cs" />
+    <Compile Include="Assets\Resources\Scripts\UI\HighScoreManager.cs" />
     <Compile Include="Assets\Resources\Scripts\UI\Timer.cs" />
     <Compile Include="Assets\Resources\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Resources\Scripts\UI\CraftingBook.cs" />
