@@ -7,10 +7,14 @@ public class Movement : MonoBehaviour
     public float speed = 5f; // Adjust the speed as needed
     private Rigidbody2D rb;
     [SerializeField] private CraftingBook book;
+    Animator animator_B;
+    SpriteRenderer sprite_renderer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator_B = gameObject.GetComponent<Animator>();
+        sprite_renderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -27,6 +31,26 @@ public class Movement : MonoBehaviour
 
         // Move the character
         rb.velocity = new Vector2(horizontalInput * speed, verticalInput * speed);
+
+        animator_B.SetFloat("Speed", Mathf.Abs(horizontalInput) + Mathf.Abs(verticalInput));
+
+        if (horizontalInput < 0)
+        {
+            sprite_renderer.flipX = true;
+        }
+        else if  (horizontalInput > 0)
+        {
+            sprite_renderer.flipX = false;
+        }
+
+        animator_B.SetBool("IsHitting", false);
+
+        if (Input.GetMouseButtonDown(0)) 
+        {
+            Debug.Log("Swing");
+            animator_B.SetBool("IsHitting", true);
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
