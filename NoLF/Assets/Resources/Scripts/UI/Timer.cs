@@ -14,35 +14,34 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("IncreaseTime", 1f, 1f);
+        InvokeRepeating("TickDown", 1f, 1f);
         //waveText.text = "Wave<br>" + wave;
     }
 
     public void setTime(int secs) {
-        seconds = secs % 60;
-        minutes = secs / 60;
         CancelInvoke();
-        InvokeRepeating("IncreaseTime", 1f, 1f);
+        seconds = secs;
+        if (seconds >= 10) {
+            timerText.text = "0:" + seconds;
+        } else {
+            timerText.text = "0:0" + seconds;
+        }
+        InvokeRepeating("TickDown", 1f, 1f);
     }
 
     public void setWave(int wave) {
         waveText.text = "Wave<br>" + wave;
     }
 
-    void IncreaseTime() {
-        if (seconds <= 0) {
-            if (minutes != 0) {
-                minutes--;
-                seconds = 59;
-            }
+    void TickDown() {
+        seconds--;
+        if (seconds < 0) {
             seconds = 0;
-        } else {
-            seconds--;
         }
         if (seconds >= 10) {
-            timerText.text = minutes + ":" + seconds;
+            timerText.text = "0:" + seconds;
         } else {
-            timerText.text = minutes + ":0" + seconds;
+            timerText.text = "0:0" + seconds;
         }
     }
 

@@ -14,9 +14,9 @@ public class EnemySpawner : MonoBehaviour
     public GameObject[] enemies;
 
     public int waveCount;  //Needs to be connected to the UI
-    private int enemyCount;
+    private int enemyCount = 1;
     private float nextWaveTime = 1.0f;
-    private float spawnRate = 1.0f;
+    //private float spawnRate = 1.0f;
     private float timeBetweenWaves = 5.0f;
 
     
@@ -37,7 +37,7 @@ public class EnemySpawner : MonoBehaviour
     {
         while (isWaveActive == true && stopSpawning == false) 
         {
-            int totalTime = (int)(1 + (enemyCount * spawnRate) + timeBetweenWaves);
+            int totalTime = 6;
             timer.setTime(totalTime);
             timer.setWave(waveCount);
             //setting of spawn position and selection of which enemy will be spawned
@@ -55,11 +55,10 @@ public class EnemySpawner : MonoBehaviour
                 //wave
                 spawnPos = Random.insideUnitCircle.normalized * spawnRadius;
                 Instantiate(enemies[Random.Range(0, enemies.Length)], spawnPos, Quaternion.identity);
-                yield return new WaitForSeconds(spawnRate);
+                //yield return new WaitForSeconds(spawnRate);
             }
 
             //Makes the next wave harder and resets other variables needed.  
-            spawnRate -= 0.2f;
             enemyCount += 1;
             yield return new WaitForSeconds(timeBetweenWaves);
             waveCount += 1;

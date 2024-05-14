@@ -29195,11 +29195,11 @@ PrefabInstance:
       objectReference: {fileID: 1978513240}
     - target: {fileID: 4007848707667054182, guid: abb9d80682b72b7409b716e2e767ff22, type: 3}
       propertyPath: towerDPS.Array.data[0]
-      value: 0.5
+      value: Low
       objectReference: {fileID: 0}
     - target: {fileID: 4007848707667054182, guid: abb9d80682b72b7409b716e2e767ff22, type: 3}
       propertyPath: towerDPS.Array.data[1]
-      value: 1.5
+      value: High
       objectReference: {fileID: 0}
     - target: {fileID: 4007848707667054182, guid: abb9d80682b72b7409b716e2e767ff22, type: 3}
       propertyPath: towerNames.Array.data[0]

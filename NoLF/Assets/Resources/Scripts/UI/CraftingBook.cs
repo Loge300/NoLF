@@ -112,18 +112,18 @@ public class CraftingBook : MonoBehaviour
         if (targetPage == 0) {
             towerPreviews[1].SetActive(false);
             towerPreviews[0].SetActive(true);
-            ingredientSprites[0].SetActive(true); //Board
-            ingredientSprites[3].SetActive(true); //Wire
-            ingredientSprites[1].SetActive(false); //Plastic
-            ingredientSprites[2].SetActive(false); //Nail
+            ingredientSprites[0].SetActive(false); //Board
+            ingredientSprites[3].SetActive(false); //Wire
+            ingredientSprites[1].SetActive(true); //Plastic
+            ingredientSprites[2].SetActive(true); //Nail
             currentPage = 0;
         } else if (targetPage == 1) {
             towerPreviews[0].SetActive(false);
             towerPreviews[1].SetActive(true);
-            ingredientSprites[1].SetActive(true); //Plastic
-            ingredientSprites[2].SetActive(true); //Nail
-            ingredientSprites[0].SetActive(false); //Board
-            ingredientSprites[3].SetActive(false); //Wire
+            ingredientSprites[0].SetActive(true); //Board
+            ingredientSprites[3].SetActive(true); //Wire
+            ingredientSprites[1].SetActive(false); //Plastic
+            ingredientSprites[2].SetActive(false); //Nail
             currentPage = 1;
         }
     }
