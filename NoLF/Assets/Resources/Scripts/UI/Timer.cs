@@ -30,11 +30,12 @@ public class Timer : MonoBehaviour
     }
 
     void IncreaseTime() {
-        if (seconds == 0) {
+        if (seconds <= 0) {
             if (minutes != 0) {
                 minutes--;
                 seconds = 59;
             }
+            seconds = 0;
         } else {
             seconds--;
         }

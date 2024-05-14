@@ -171,10 +171,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 640, y: 360}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -265,7 +265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.52}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 293, y: 8}
+  m_AnchoredPosition: {x: 306, y: -67}
   m_SizeDelta: {x: 425.5404, y: 62.3759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &286620779
@@ -315,8 +315,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 68.7
-  m_fontSizeBase: 68.7
+  m_fontSize: 34.3
+  m_fontSizeBase: 34.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -399,8 +399,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: -0.000015259}
-  m_SizeDelta: {x: 1515, y: 852}
+  m_AnchoredPosition: {x: 35, y: -32}
+  m_SizeDelta: {x: 859.9556, y: 483.6186}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &612955551
 MonoBehaviour:
@@ -542,7 +542,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 69.599, y: 105.24}
+  m_AnchoredPosition: {x: 231, y: -20.371}
   m_SizeDelta: {x: 1016.1985, y: 119.1181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &868620919
@@ -592,8 +592,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 92.83
-  m_fontSizeBase: 92.83
+  m_fontSize: 56.75
+  m_fontSizeBase: 56.75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -676,7 +676,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 69.599, y: -32}
+  m_AnchoredPosition: {x: 231.00002, y: -82.746994}
   m_SizeDelta: {x: 1016.1985, y: 119.1181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1144251255
@@ -726,8 +726,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 92.83
-  m_fontSizeBase: 92.83
+  m_fontSize: 56.75
+  m_fontSizeBase: 56.75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -939,7 +939,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.52}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15, y: 276}
+  m_AnchoredPosition: {x: 241, y: 15}
   m_SizeDelta: {x: 951.98, y: 222.4075}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1476469805
@@ -989,8 +989,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 141.2
-  m_fontSizeBase: 141.2
+  m_fontSize: 69.9
+  m_fontSizeBase: 69.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1091,8 +1091,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: -391}
-  m_SizeDelta: {x: 303.08, y: 133.9}
+  m_AnchoredPosition: {x: -14, y: -131}
+  m_SizeDelta: {x: 112.261, y: 49.5966}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714750940
 MonoBehaviour:
@@ -1338,7 +1338,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.52}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 298.90466, y: 120.5105}
+  m_AnchoredPosition: {x: 310, y: -5}
   m_SizeDelta: {x: 425.5404, y: 62.3759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2061692025
@@ -1388,8 +1388,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 68.7
-  m_fontSizeBase: 68.7
+  m_fontSize: 34.3
+  m_fontSizeBase: 34.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
