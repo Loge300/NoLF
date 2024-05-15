@@ -12,6 +12,7 @@ public class CraftButton : MonoBehaviour
     [SerializeField] private Boards boards;
     [SerializeField] private Plastic plastic;
     [SerializeField] private NailsMaterial nails;
+    [SerializeField] GameObject plots;
     private bool canCraft;
     public int towerHeld = -1;
     void Start()
@@ -43,7 +44,9 @@ public class CraftButton : MonoBehaviour
     }
 
     private void OnMouseDown() {
+        Debug.Log("Craft Button Clicked");
         if (canCraft) {
+            plots.SetActive(true);
             if (book.currentPage == 0) {
                 book.slideOut();
                 nails.decreaseNails(4);
@@ -56,5 +59,9 @@ public class CraftButton : MonoBehaviour
                 towerHeld = 1;
             }
         }
+    }
+
+    public void disableAllPlots() {
+        plots.SetActive(false);
     }
 }

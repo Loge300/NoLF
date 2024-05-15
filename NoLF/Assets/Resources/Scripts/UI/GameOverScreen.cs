@@ -7,8 +7,7 @@ using UnityEngine.UI;
 public class GameOverScreen : MonoBehaviour
 {
     // Start is called before the first frame update
-    public void GoBack()
-    {
+    public void click() {
         SceneManager.LoadScene("Main Menu");
     }
 }

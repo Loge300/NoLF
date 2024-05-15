@@ -9596,7 +9596,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &689506093
 Transform:
   m_ObjectHideFlags: 0
@@ -16790,7 +16790,7 @@ GameObject:
   - component: {fileID: 1149490752}
   - component: {fileID: 1149490753}
   - component: {fileID: 1149490755}
-  - component: {fileID: 1149490754}
+  - component: {fileID: 1149490756}
   m_Layer: 0
   m_Name: craftButton
   m_TagString: Untagged
@@ -16807,8 +16807,8 @@ Transform:
   m_GameObject: {fileID: 1149490751}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 89, y: -109.1, z: 0}
-  m_LocalScale: {x: 9.642857, y: 9.642857, z: 0.4044537}
+  m_LocalPosition: {x: 88.65, y: -108.54, z: 0}
+  m_LocalScale: {x: 9.739285, y: 9.932142, z: 0.4044537}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6205449193586525516}
@@ -16865,7 +16865,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1149490754
+--- !u!114 &1149490755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149490751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817beae261ffa54438cac45a9d440d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cantCraftButton: {fileID: 21300000, guid: b1a5bc7207318e9488b120c80a0fd180, type: 3}
+  canCraftButton: {fileID: 21300000, guid: 885f45caea1ddaa4c91b239ca413e658, type: 3}
+  book: {fileID: 319495575}
+  wires: {fileID: 656857594}
+  boards: {fileID: 216247707}
+  plastic: {fileID: 5635966875570388868}
+  nails: {fileID: 5635966875570388869}
+  plots: {fileID: 689506092}
+  towerHeld: -1
+--- !u!61 &1149490756
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16897,7 +16918,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.037872314, y: -0.040111065}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -16908,28 +16929,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.56, y: 3.73}
+  m_Size: {x: 9.066696, y: 4.120118}
   m_EdgeRadius: 0
---- !u!114 &1149490755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149490751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 817beae261ffa54438cac45a9d440d4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cantCraftButton: {fileID: 21300000, guid: b1a5bc7207318e9488b120c80a0fd180, type: 3}
-  canCraftButton: {fileID: 21300000, guid: 885f45caea1ddaa4c91b239ca413e658, type: 3}
-  book: {fileID: 319495575}
-  wires: {fileID: 656857594}
-  boards: {fileID: 216247707}
-  plastic: {fileID: 5635966875570388868}
-  nails: {fileID: 5635966875570388869}
-  towerHeld: -1
 --- !u!1001 &1152531356
 PrefabInstance:
   m_ObjectHideFlags: 0

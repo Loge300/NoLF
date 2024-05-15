@@ -32,6 +32,7 @@ public class Plot : MonoBehaviour
             GameObject towerToBuild = BuildManager.main.GetSelectedTower();
             tower = Instantiate(towerToBuild, transform.position, Quaternion.identity);
             button.towerHeld = -1;
+            button.disableAllPlots();
         }
     }
 }
